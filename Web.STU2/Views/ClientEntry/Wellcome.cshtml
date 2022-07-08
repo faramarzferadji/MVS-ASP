@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Wellcome";
+}
+@if (Session["Password"] != null)
+{
+    <h2>Wellcome  @Session["UserName"].ToString()</h2>
+}
+
+<h2>For enter the data please push the buttom below</h2>
+<a href="@Url.Action("Create","STU")"><Button type="button" class="btn-primary">Add Data</Button></a>
+
+

@@ -1,0 +1,38 @@
+﻿@model System.Data.DataTable
+@{
+    ViewBag.Title = "Index";
+}
+<p>
+   
+    @using (Html.BeginForm("Searching", "STU", FormMethod.Get))
+    {
+        <input type="text" name="stsearch" />
+        <input type="submit" value="Searching "  name="submit" />
+       
+    }
+</p>
+
+<table class="table table-bordered table-striped">
+    
+    <tr>
+        <th> StudentId</th>
+        <th> Name</th>
+        <th> Date Of Brith</th>
+        <th></th>
+    </tr>
+    @for (int i = 0; i < Model.Rows.Count; i++)
+    {
+        <tr>
+            <td>@Model.Rows[i][1]</td>
+            <td>@Model.Rows[i][2]</td>
+            <td>@Model.Rows[i][3]</td>
+            <td>
+                <a href="@Url.Action("Edit","STU",new { @id = Model.Rows[i][0] })"><Button type="button" class="btn-success">Edit<i class="glyphicon glyphicon-pencil"></i></Button></a>
+                <a href="@Url.Action("Delete","STu",new { @id = Model.Rows[i][0] })"><Button type="button" class="btn-danger">Delete<i class="glyphicon glyphicon-trash"></i></Button></a>
+            </td>
+        </tr>
+
+    }
+</table>
+<a href="@Url.Action("Create","STU")"><Button type="button" class="btn-primary">Add Data<i class="glyphicon glyphicon-asterisk"></i></Button></a>
+

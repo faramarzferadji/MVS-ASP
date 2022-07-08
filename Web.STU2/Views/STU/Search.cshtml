@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Web.STU2.Models.StuModel>
+
+@{
+    ViewBag.Title = "Search";
+}
+
+
+
+<p>
+   
+  
+   @using (Html.BeginForm("Search","STU", FormMethod.Get))
+    {
+        <input type="text" name="stsearch" />
+        <input type="submit" value="Search" name="submit" />
+    }
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOB)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DOB)
+        </td>
+        
+    </tr>
+}
+
+</table>

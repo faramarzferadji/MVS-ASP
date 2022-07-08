@@ -1,0 +1,10 @@
+C:\Users\ferad\source\repos\Web.STU2\DBSTU2\bin\Debug\DBSTU2.dacpac
+C:\Users\ferad\source\repos\Web.STU2\DBSTU2\bin\Debug\DBSTU2.dll
+C:\Users\ferad\source\repos\Web.STU2\DBSTU2\bin\Debug\DBSTU2.pdb
+C:\Users\ferad\source\repos\Web.STU2\DBSTU2\obj\Debug\DBSTU2.sqlproj.AssemblyReference.cache
+C:\Users\ferad\source\repos\Web.STU2\DBSTU2\obj\Debug\Model.xml
+C:\Users\ferad\source\repos\Web.STU2\DBSTU2\obj\Debug\refactor.xml
+C:\Users\ferad\source\repos\Web.STU2\DBSTU2\obj\Debug\postdeploy.sql
+C:\Users\ferad\source\repos\Web.STU2\DBSTU2\obj\Debug\predeploy.sql
+C:\Users\ferad\source\repos\Web.STU2\DBSTU2\obj\Debug\DBSTU2.dll
+C:\Users\ferad\source\repos\Web.STU2\DBSTU2\obj\Debug\DBSTU2.pdb
